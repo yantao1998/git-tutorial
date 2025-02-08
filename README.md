@@ -170,7 +170,7 @@ git remote add origin git@github.com:用户名/库名.git
 
 远程库一般命名为origin
 
-- 也可以通过克隆直接获取远程库
+- 也可以通过克隆直接获取远程库,
 
   ~~~bash
   git clone 粘贴
