@@ -54,6 +54,7 @@ git status
 
   ~~~b
   git commit -m "提交的版本说明"
+  修改commit说明：git commit --amend 
   ~~~
 
   将暂存区的文件保存到仓库的历史记录中形成一个版本。
@@ -175,13 +176,17 @@ git remote add origin git@github.com:用户名/库名.git
   ~~~bash
   git clone 粘贴
   ~~~
+- 获取远程库指定分支
+  ~~~bash
+  git checkout -b 分支名 origin/分支名
+  ~~~
 
 ## push操作
 
 推送至远程库
 
 ~~~bash
-git push origin master
+git push -u origin master
 ~~~
 
 将master分支推送至远程库
@@ -193,6 +198,7 @@ git push origin master
 ~~~bash
 git push origin 分支名
 ~~~
+后续可以直接使用git push
 
 ## pull操作
 
